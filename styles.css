@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #d7d7d7;
+  height: 16vh; /* Ajusta esta altura según sea necesario */
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* transicion */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 16vh;
+  background-color: #d7d7d7;
+  box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+section {
+  background-color: #f1f1f1;
+  padding-top: 16vh;
+}
+
+.foto img {
+  height: 40vh;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.foto {
+  text-align: center;
+}
+
+.datos {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.datos p {
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.nombre {
+  font-size: 3rem;
+}
+
+.puesto {
+  font-size: 2.5rem;
+}
+
+.datos button {
+  margin-top: 10px;
+}
+
+.cont-text-sobreMi {
+  justify-content: center;
+  margin: 10px;
+  cursor: default;
+}
+
+.text-sobreMi {
+  box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+  margin-left: 10px;
+  width: 40%;
+  transition: all 400ms ease;
+}
+
+.text-sobreMi:hover {
+  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+}
+
+span {
+  font-size: 2rem;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconos {
+  height: 10vh;
+  border-radius: 20%;
+  display: block;
+  margin: 0 auto;
+}
+
+.iconos:hover {
+  box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+}
+
+.cont-iconos {
+  margin-top: 15px;
+  padding: 0px 10px 0px 10px;
+}
+
+.text-iconos {
+  text-align: center;
+  font-weight: 600;
+}
+
+#contacto p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+#contacto p i {
+  margin-right: 10px;
+}
+
+/* mediaqueries */
+
+@media (max-width: 500px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #d7d7d7;
+    height: 10vh; /* Ajusta esta altura según sea necesario */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: #d7d7d7;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+  }
+
+  section {
+    background-color: #f1f1f1;
+    padding-top: 10vh;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    list-style: none;
+    font-size: 1.4rem;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .foto img {
+    height: 30vh;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+
+  #sobreMi span:first {
+    margin-bottom: 5px;
+  }
+
+  .cont-text-sobreMi {
+    justify-content: center;
+    margin: 0px 10px 10px 10px;
+    cursor: default;
+  }
+
+  .text-sobreMi {
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+    margin-left: 0px;
+    transition: all 400ms ease;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #contacto p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 399px) {
+  #contacto p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #d7d7d7;
+    height: 12vh; /* Ajusta esta altura según sea necesario */
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: #d7d7d7;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0, 0.2);
+  }
+
+  section {
+    background-color: #f1f1f1;
+    padding-top: 12vh;
+  }
+}
